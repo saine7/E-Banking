@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/old_passcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="103dp"
+        android:ems="10"
+        android:hint="Enter old passcode"
+        android:inputType="numberPassword"
+        android:backgroundTint="@android:color/black"
+        android:textColor="@android:color/black"
+        android:textColorHighlight="?attr/colorControlHighlight"
+        android:textColorHint="@android:color/black"
+        android:textCursorDrawable="@null"/>
+
+    <EditText
+        android:id="@+id/new_passcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Enter new passcode"
+        android:inputType="numberPassword"
+        android:layout_below="@+id/old_passcode"
+        android:layout_alignLeft="@+id/old_passcode"
+        android:layout_alignStart="@+id/old_passcode"
+        android:backgroundTint="@android:color/black"
+        android:textColor="@android:color/black"
+        android:textColorHighlight="?attr/colorControlHighlight"
+        android:textColorHint="@android:color/black"
+        android:textCursorDrawable="@null"/>
+
+    <EditText
+        android:id="@+id/con_new_passcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Confirm new passcode"
+        android:inputType="numberPassword"
+        android:layout_below="@+id/new_passcode"
+        android:layout_alignLeft="@+id/new_passcode"
+        android:layout_alignStart="@+id/new_passcode"
+        android:layout_marginTop="11dp"
+        android:backgroundTint="@android:color/black"
+        android:textColor="@android:color/black"
+        android:textColorHighlight="?attr/colorControlHighlight"
+        android:textColorHint="@android:color/black"
+        android:textCursorDrawable="@null"/>
+
+    <Button
+        android:id="@+id/changePasscodeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:text="Change passcode"
+        android:layout_below="@+id/con_new_passcode"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
